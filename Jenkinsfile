@@ -22,7 +22,7 @@ pipeline {
             }
         }
         stage('Push Docker Image'){
-            where{
+            when{
                 branch 'master'
             }
             steps{
